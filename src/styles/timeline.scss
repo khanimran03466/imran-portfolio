@@ -1,0 +1,81 @@
+.experience {
+    background-color: $color1;
+    width: 100%;
+    height: 100vh;
+
+    .timeLineBox{
+        max-width: 1200px;
+        width: 100%;        
+        margin: 0 auto;        
+        height: 100%;        
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &::before{
+            content: "";
+            background: $color5;
+            width: 6px;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            top: 0;
+            margin-left: -3px;
+        }
+    }
+
+    .timeline {
+        background-color:inherit;
+        color: $color4;
+        padding: 1rem 3rem;
+        max-width: 50%;
+        width: 100%;
+        position: relative;
+
+        &::after{
+            content: "";
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            right: -17px;
+            background-color: $color1;
+            border: 4px solid $color5;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        > div{
+            background-color: $color5;
+            padding: 20px 30px;
+            color: $color1;
+            border-radius: 5px;
+
+            p{
+                font-size: 1.2rem;
+            }
+        }
+
+        
+    }
+
+    .leftTimeLine {
+        left: 0;
+        text-align: right;
+
+        &::after{
+            animation: upandDown .3s infinite ease-in alternate;
+        }
+    }
+
+    .rightTimeLine {
+        left: 50%;
+
+        &::after{
+            left: -16px;
+            animation: upandDown .5s infinite ease-in alternate;
+        }
+    }
+}

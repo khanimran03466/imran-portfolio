@@ -1,0 +1,59 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    overflow: hidden !important;
+}
+
+nav{
+    width: 100%;
+    
+    background: $color1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem $p;
+
+    h2{
+        font-size: 2rem;
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        gap:2rem;
+    }
+
+    a{
+        color: $color6;
+        font-size: 1rem;
+        transition: .3s;
+        letter-spacing: 1px;
+        font-weight: 500;
+
+       &:hover{
+        color: $color3;
+       }
+
+
+
+           button {
+               transition: .3s;
+               padding: 0.5rem 2rem;
+               border: 1px solid $color6_1;
+               background-color: $color1;
+               cursor: pointer;
+               color: $color6;
+               letter-spacing: 1px;
+               font-weight: 500;
+               transition: .3s;
+               font-size: 1rem;
+               
+    
+               &:hover {
+                   background-color: $color6;
+                   color: $color4;
+               }
+           }
+    }
+}

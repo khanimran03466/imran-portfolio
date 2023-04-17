@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import "./static";
+@import "animations";
+@import "header";
+@import "home";
+@import "work";
+@import "timeline";
+@import "services";
+@import "contact";
+@import "footer";
+
+body, html, * {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $text2;    
+    text-decoration: none;
+}
+
+body{
+    background-color: $color1;
+    overflow-x: hidden !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.disableBtn{
+    background-color: rgb(237,237,237);
+    cursor: not-allowed;
+}
+
+.heading {
+    font: 700 2.5rem $text2;
+    width: fit-content;
+    border-bottom: 2px solid $color4;
+    padding: 0.5rem 0;
+    margin: auto;
+}
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: $color1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.right-hello-img {
+    background-color: $color5;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+
+    img {
+        width: 75%;
+        object-fit: contain;
+        filter: drop-shadow(0 0 10px rgba(0,0,0, .5)) hue-rotate(150deg);
+        animation: upandDown .5s infinite ease-in alternate;
+    }
+}
+
+
+.form {
+    padding-left: $p;
+    height: 100%;
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        h2{
+            text-align: center;
+            font: 100 2.5rem $text2;
+            text-transform: uppercase;
+            margin: 2rem;
+        }
+
+        > input, > button, textarea {
+            padding: .8rem;
+            width: 80%;
+            outline: none;
+            font: 400 .9rem $text2;
+            border: none;
+            margin-bottom: 25px;
+            font-size: 1rem;
+            font-family: $text1;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: $color3;
+            color: $color6;
+            font: 600 1rem $text1;
+            text-transform: uppercase;
+            margin: 3rem;
+            color: $color4;
+
+            &:hover{
+                background-color: $color3_1;
+            }
+        }
+    }
+}
