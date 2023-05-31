@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 @import "./static";
-@import "animations";
-@import "header";
-@import "home";
-@import "work";
-@import "timeline";
-@import "services";
-@import "contact";
-@import "footer";
 
 body, html, * {
     scroll-behavior: smooth;
@@ -33,6 +25,10 @@ a{
     cursor: not-allowed;
 }
 
+button[disabled]{
+    cursor: not-allowed !important;
+}
+
 .heading {
     font: 700 2.5rem $text2;
     width: fit-content;
@@ -40,6 +36,16 @@ a{
     padding: 0.5rem 0;
     margin: auto;
 }
+
+@import "animations";
+@import "header";
+@import "home";
+@import "work";
+@import "timeline";
+@import "services";
+@import "contact";
+@import "footer";
+@import "responsive";
 
 
 

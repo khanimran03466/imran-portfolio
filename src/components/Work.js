@@ -11,7 +11,7 @@ const Work = () => {
     <section id="work" className="work">
       <h2 className="heading">Work</h2>
 
-      <Carousel showArrows={true} showThumbs={false} autoPlay={true} infiniteLoop={true} interval={3000}  >
+      <Carousel showArrows={true} showThumbs={false} autoPlay={true} infiniteLoop={true} interval={3000} showStatus={false}  >
         {data.map((item) => (
           <div className="slider-item" key={item.title}>
             <img src={img} alt={item.title} />

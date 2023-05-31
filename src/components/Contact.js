@@ -1,19 +1,48 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-
 import { motion } from "framer-motion";
-
 import vg from "./../assets/images/vg.png";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../firebase";
+
+
+
+
+
 
 const Contact = () => {
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const formHandler = (e) => {
+  const [disableBtn, setDisableBtn] = useState(false);
+  
+
+  const formHandler = async (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    toast.success("Your message is sent");
+    setDisableBtn(true);
+    
+
+    try{
+      await addDoc(collection(db, "collection"), {
+        name,
+        email,
+        message,
+      });
+      toast.success("Your message is sent");
+      setDisableBtn(false);
+      setEmail("");
+      setMessage("");
+      setName("");
+    }
+
+    catch(error){
+      toast.error("Erorr");
+      setDisableBtn(false);
+    }
+
+    
   };
 
   // Animation
@@ -39,9 +68,9 @@ const Contact = () => {
         y: 0,
         opacity: 1,
       },
-      transition:{
-        delay:" 0.5"
-      }
+      transition: {
+        delay: " 0.5",
+      },
     },
   };
 
@@ -75,7 +104,14 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
           />
 
-          <motion.button type="submit" {...animations.button} > Send </motion.button>
+          <motion.button 
+            type="submit" 
+            disabled={disableBtn}
+            {...animations.button}>
+
+            Send
+
+          </motion.button>
 
         </motion.form>
       </div>

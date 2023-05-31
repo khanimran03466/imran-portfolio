@@ -1,6 +1,6 @@
 import React from 'react';
 import {AiFillGithub, AiOutlineMail} from "react-icons/ai";
-import { BsArrowUpSquareFill } from "react-icons/bs";
+import { BsArrowUpSquareFill, BsTelephone } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -16,6 +16,10 @@ const Footer = () => {
             <a href="https://github.com/khanimran03466" target='blank' >
                 <AiFillGithub />
                 GitHub
+            </a>
+            <a href="tel:7666373799" target='blank' >
+                <BsTelephone />
+                7666 3737 99
             </a>
         </div>
         <div className="fooSec">
