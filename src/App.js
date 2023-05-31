@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header, { MobileNav } from "./components/Header";
 import Home from "./components/Home";
 import Work from "./components/Work";
 import Timeline from "./components/Timeline";
@@ -13,6 +13,7 @@ function App() {
 
   return (
     <>
+      {/* <MobileNav /> */}
       <Header/>
       <Home />
       <Work />
