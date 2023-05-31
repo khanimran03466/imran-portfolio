@@ -5,6 +5,9 @@
     color: $color1;
     padding: $p;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h2 {
         font: 700 2.5rem $text2;
