@@ -4,19 +4,20 @@ import { AiOutlineMenu } from "react-icons/ai";
 const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const [navFixed, setNavFixed] = useState(false);
+  // const [navFixed, setNavFixed] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);
 
   useEffect(()=>{
-    window.addEventListener("scroll", e =>{
-      var doc = document.documentElement;
-      const top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-      if(top >= 75) {
-        setNavFixed(true)
-      } else {
-        setNavFixed(false)
-      }
-    } );
+
+    // window.addEventListener("scroll", e =>{
+    //   var doc = document.documentElement;
+    //   const top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+    //   if(top >= 75) {
+    //     setNavFixed(true)
+    //   } else {
+    //     setNavFixed(false)
+    //   }
+    // } );
 
     let headerHgt = document.querySelector("header").clientHeight;
     setHeaderHeight(headerHgt);
@@ -26,8 +27,7 @@ const Header = () => {
   
 
   const handleMenuClick = (e) => {
-    e.preventDefault()
-    console.log(headerHeight);
+    e.preventDefault();
     const element = document.getElementById(`${e.target.getAttribute("href").replace("#", "")}`)
     const y = element.getBoundingClientRect().top + window.scrollY - headerHeight;
     window.scroll({
@@ -38,7 +38,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`${navFixed ? 'fixed-nav' : ''}`}>
+      <header>
         <nav>
           <div className="desk-nav">
             <NavContent handleMenuClick={handleMenuClick} />
