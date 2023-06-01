@@ -17,7 +17,7 @@ const Footer = () => {
                 <AiFillGithub />
                 GitHub
             </a>
-            <a href="tel:7666373799" target='blank' >
+            <a href="tel:+917666373799" target='blank' >
                 <BsTelephone />
                 (+91) 7666 3737 99
             </a>
