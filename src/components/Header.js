@@ -2,21 +2,25 @@ import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
+
   const [menuOpen, setMenuOpen] = useState(false);
+  const [navFixed, setNavFixed] = useState("");
 
   console.log(menuOpen);
 
   return (
     <>
       <header>
-        <nav className="desk-nav">
-          <NavContent />
-          <div className="mob-nav">
-          <MobileNav />
-        </div>
+        <nav>
+          <div className="desk-nav">
+            <NavContent />
+          </div>
+          <div className={`mob mob-nav ${menuOpen?"active":""}`}>
+            <MobileNav setMenuOpen={setMenuOpen} />
+          </div>
         </nav>
-        
-        <button onClick={() => setMenuOpen(!menuOpen)}>
+
+        <button onClick={() => setMenuOpen(!menuOpen)} className={ `mob ${menuOpen?"active":""}` }>
           <AiOutlineMenu />
         </button>
       </header>
@@ -24,9 +28,9 @@ const Header = () => {
   );
 };
 
-export const MobileNav = () => (
+const MobileNav = ({setMenuOpen}) => (
   <>
-    <div className="mobile-nav">
+    <div className="mobile-nav" onClick={ ()=> setMenuOpen(false) }>
       <NavContent />
     </div>
   </>

@@ -219,15 +219,61 @@
         flex: 0 0 29.333333%;
     }
 
+    nav div, .desk-nav div{
+        gap: 1.2rem;
+    }
+
 }
 
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
+
+    .mob {
+        display: block
+    }
+
+    .desk {
+        display: none
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+
+        button {
+            font-size: 3rem;
+            border: none;
+            display: flex;
+            align-items: center;
+            margin-right: 25px;
+            z-index: 9999;
+            padding: 0px 10px;
+            background: transparent;
+        }
+
+        button.active {
+            color: #fff;
+        }
+    }
+
+
+
+    .desk-nav {
+
+        div,
+        a {
+            display: none;
+        }
+    }
 
     nav {
         padding: 1rem $p_sm;
+    }
+
+    .mobile-nav a button {
+        margin: auto;
     }
 
     nav h2 {
@@ -241,6 +287,10 @@
     #home {
         display: flex;
         flex-direction: column-reverse;
+
+        .Typewriter {
+            text-align: center;
+        }
     }
 
     #home section img {
@@ -266,7 +316,7 @@
     }
 
     #home section:first-of-type h1 {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         text-align: center;
     }
 
@@ -317,17 +367,17 @@
     }
 
     .experience .timeline {
-        max-width: 80%;
-        margin: .8rem 0;
+        max-width: 90%;
+        margin: 1.2rem 0;
     }
 
     .experience .leftTimeLine,
     .experience .rightTimeLine {
-        left: 20%;
+        left: 10%;
     }
 
     .experience .timeLineBox::before {
-        left: 20%;
+        left: 10%;
     }
 
     .experience .timeline::after {
@@ -385,4 +435,125 @@
         flex-direction: column-reverse;
         position: relative;
     }
+}
+
+
+
+@media(max-width: 600px) {
+    header {
+        button {
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+
+        .mobile-nav {
+            gap: 3rem;
+
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    #home {
+        height: auto;
+
+        .dow-arrow-icon {
+            display: none;
+        }
+
+        section:last-of-type::before {
+            width: 80%;
+            height: 80%;
+            top: 35px;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        section {
+            img {
+                max-width: 90%;
+            }
+        }
+
+        .home-bottom-sec {
+            text-align: center;
+        }
+
+        .hireme-sec {
+            margin: 2rem 0;
+        }
+
+        .Typewriter {
+            margin-top: 3rem;
+        }
+    }
+
+    #home section:first-of-type h1 {
+        font-size: 2rem;
+    }
+
+    #home .home-bottom-sec aside {
+        flex-direction: column;
+    }
+
+
+    #work {
+        padding: 5rem 1rem;
+        height: auto;
+
+        .work-sec {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider-item {
+            max-width: 50%;
+            height: auto;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+    }
+
+
+    .experience {
+        height: auto;
+    }
+
+
+    .services {
+        padding: 2rem 0;
+        height: auto;
+
+        .services-box {
+            height: auto;
+            max-height: initial;
+            gap: 1rem;
+            margin: 40px 15px;
+        }
+    }
+
+    .services .services-box .services-box1 {
+        grid-column: 1/3;
+    }
+
+    .services .services-box .services-box4 {
+        grid-column: 1/4;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+    footer .fooSec h2 {
+        text-align: center;
+    }
+
+
+
 }

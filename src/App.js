@@ -13,7 +13,6 @@ function App() {
 
   return (
     <>
-      {/* <MobileNav /> */}
       <Header/>
       <Home />
       <Work />
