@@ -19,7 +19,7 @@ const Footer = () => {
             </a>
             <a href="tel:7666373799" target='blank' >
                 <BsTelephone />
-                7666 3737 99
+                (+91) 7666 3737 99
             </a>
         </div>
         <div className="fooSec">
