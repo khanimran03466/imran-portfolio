@@ -241,6 +241,7 @@
     header {
         display: flex;
         align-items: center;
+        position: fixed;
 
         button {
             font-size: 3rem;
@@ -287,7 +288,7 @@
     #home {
         display: flex;
         flex-direction: column-reverse;
-
+        padding-top: 75px;
         .Typewriter {
             text-align: center;
         }
@@ -438,6 +439,10 @@
 
     .form form button{
         margin: 0rem 0 3rem 0rem;
+    }
+
+    header button{
+        color: $color6;
     }
 }
 
