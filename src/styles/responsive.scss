@@ -435,6 +435,10 @@
         flex-direction: column-reverse;
         position: relative;
     }
+
+    .form form button{
+        margin: 0rem 0 3rem 0rem;
+    }
 }
 
 
@@ -453,6 +457,10 @@
                 font-size: 1.2rem;
             }
         }
+    }
+
+    #home .home-bottom-sec article::before {
+        left: 24%;
     }
 
     #home {
