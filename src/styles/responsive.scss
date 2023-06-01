@@ -555,7 +555,12 @@
     }
 
     .contact {
-        height: auto;
+        height: initial;
+
+    }
+
+    .form {
+        display: flex;
     }
 
     footer .fooSec h2 {
