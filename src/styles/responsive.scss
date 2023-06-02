@@ -6,7 +6,8 @@
     }
 
     #home {
-        height: 88vh;
+        height: 100vh;
+        padding-top: 75px;
     }
 
     nav {
@@ -219,7 +220,8 @@
         flex: 0 0 29.333333%;
     }
 
-    nav div, .desk-nav div{
+    nav div,
+    .desk-nav div {
         gap: 1.2rem;
     }
 
@@ -289,8 +291,22 @@
         display: flex;
         flex-direction: column-reverse;
         padding-top: 75px;
+        height: auto;
+
         .Typewriter {
             text-align: center;
+            margin-top: 3rem;
+        }
+
+        .hireme-sec {
+            margin: 2rem 0;
+        }
+
+        .home-bottom-sec {
+            margin-bottom: 45px;
+            max-width: 532px;
+            margin: 5px auto 50px;
+            width: 100%;
         }
     }
 
@@ -317,7 +333,7 @@
     }
 
     #home section:first-of-type h1 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         text-align: center;
     }
 
@@ -366,6 +382,11 @@
     .carousel .slide {
         padding: 0 15px;
     }
+
+    .experience {
+        position: relative;
+    }
+
 
     .experience .timeline {
         max-width: 90%;
@@ -437,11 +458,11 @@
         position: relative;
     }
 
-    .form form button{
+    .form form button {
         margin: 0rem 0 3rem 0rem;
     }
 
-    header button{
+    header button {
         color: $color6;
     }
 }
@@ -456,7 +477,7 @@
         }
 
         .mobile-nav {
-            gap: 3rem;
+            gap: 7rem;
 
             a {
                 font-size: 1.2rem;
@@ -536,6 +557,12 @@
 
     .experience {
         height: auto;
+        padding: 4rem 0;
+
+        .timeLineBox {
+            position: static;
+        }
+
     }
 
 
