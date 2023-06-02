@@ -385,25 +385,29 @@
 
     .experience {
         position: relative;
+        .leftTimeLine{
+            text-align: left;
+        }
     }
 
 
     .experience .timeline {
-        max-width: 90%;
+        max-width: 100%;
         margin: 1.2rem 0;
+        padding: 0.1rem 2rem;
     }
 
     .experience .leftTimeLine,
     .experience .rightTimeLine {
-        left: 10%;
+        left: 5%;
     }
 
     .experience .timeLineBox::before {
-        left: 10%;
+        left: 6%;
     }
 
     .experience .timeline::after {
-        left: -13px;
+        left: -9px;
     }
 
 

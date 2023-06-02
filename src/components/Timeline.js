@@ -5,12 +5,12 @@ const Timeline = () => {
   return (
     <section className="experience" id="experience">
       <div className="timeLineBox">
-        {data.map((item, index) => (
+        {data.experiance.map((item, index) => (
           <TimeLineItem
             heading={item.title}
             text={item.date}
             index={index}
-            key={item.title}
+            key={item.title} 
           />
         ))}
       </div>

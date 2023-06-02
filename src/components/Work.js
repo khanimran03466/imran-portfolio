@@ -20,7 +20,7 @@ const Work = () => {
           interval={3000}
           showStatus={false}
         >
-          {data.map((item) => (
+          {data.projects.map((item) => (
             <div className="slider-item" key={item.title}>
               <img src={img} alt={item.title} />
               <aside>
