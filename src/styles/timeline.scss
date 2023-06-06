@@ -67,7 +67,7 @@
         text-align: right;
 
         &::after{
-            animation: upandDown .3s infinite ease-in alternate;
+            animation: upandDown .7s infinite ease-in alternate;
         }
     }
 
@@ -76,7 +76,7 @@
 
         &::after{
             left: -16px;
-            animation: upandDown .5s infinite ease-in alternate;
+            animation: upandDown .9s infinite ease-in alternate;
         }
     }
 }
