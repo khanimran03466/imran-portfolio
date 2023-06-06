@@ -2,8 +2,6 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-import img from "../assets/images/json-img-url/tatasteel.png";
-
 import data from "../assets/data.json";
 
 const Work = () => {
@@ -22,7 +20,7 @@ const Work = () => {
         >
           {data.projects.map((item) => (
             <div className="slider-item" key={item.title}>
-              <img src={img} alt={item.title} />
+              <img src={item.imgSrc} alt={item.title} />
               <aside>
                 <h3>{item.title}</h3>
                 <p>{item.discription}</p>

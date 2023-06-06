@@ -1,45 +1,51 @@
 {
     "projects": [{
-            "title": "TATA STEEL",
-            "discription": "I have made this web site in the 2 months with my team.",
-            "imgSrc": "../",
-            "url": "https://www.tatasteel.com/",
-            "date": "10/05/20"
+            "title": "EASY CARE",
+            "discription": "Using: React, HTML, JavaScript, CSS, GSAP",
+            "imgSrc": "https://i.ibb.co/brp0JrL/easyCare.png",
+            "url": "https://inspiring-pare-2095ed.netlify.app/"
+        },
+        {
+            "title": "MY PORTFOLIO",
+            "discription": "2023 | React, HTML5, JavaScript, CSS3, Motion Framer, React Crousel",
+            "imgSrc": "https://i.ibb.co/grPfr6g/portfolio.png",
+            "url": "/"
+        },
+        {
+            "title": "WHY VACCINES",
+            "discription": "2023 | HTML5, CSS3, JavaScript.",
+            "imgSrc": "https://i.ibb.co/xM6DcLX/whyvaccines.png",
+            "url": "https://www.whyvaccines.com/"
         },
         {
             "title": "TATA POWER",
-            "discription": "I have made this web site in the 2 months with my team.",
-            "imgSrc": "/src/assets/images/json-img-url/tatasteel.png",
-            "url": "https://solaroof.tatapower.com/",
-            "date": "10/08/20"
+            "discription": "Using: HTML5, JavaScript, CSS3, AOS ",
+            "imgSrc": "https://i.ibb.co/kcRpFyB/tatapower.png",
+            "url": "https://solaroof.tatapower.com"
         },
         {
             "title": "LENOVO LAPTOPS",
-            "discription": "I have made this web site in the 2 months with my team.",
-            "imgSrc": "/src/assets/images/json-img-url/tatasteel.png",
-            "url": "https://khanimran03466.github.io/leveno/",
-            "date": "05/06/21"
+            "discription": "Using: HTML5, JavaScript, CSS3, AOS. (UI)",
+            "imgSrc": "https://i.ibb.co/ZWwzGjt/lenovo.png",
+            "url": "https://khanimran03466.github.io/leveno/"
         },
         {
             "title": "LOWCOUNTRY MALE",
-            "discription": "I have made this web site in the 2 months with my team.",
-            "imgSrc": "/src/assets/images/json-img-url/tatasteel.png",
-            "url": "https://lowcountrymale.com/",
-            "date": "10/07/21"
-        },
-        {
-            "title": "RADIO MIRCHI",
-            "discription": "I have made this web site in the 2 months with my team.",
-            "imgSrc": "/src/assets/images/json-img-url/tatasteel.png",
-            "url": "https://www.tatasteel.com/",
-            "date": "10/09/21"
+            "discription": "Using: HTML5, CSS3, JavaScript, Jquery. ",
+            "imgSrc": "https://i.ibb.co/Yt7m21d/lowcountry.png",
+            "url": "https://lowcountrymale.com/"
         },
         {
             "title": "BLANZ DRINK",
-            "discription": "I have made this web site in the 2 months with my team.",
-            "imgSrc": "/src/assets/images/json-img-url/tatasteel.png",
-            "url": "https://khanimran03466.github.io/ReBalanz/",
-            "date": "10/10/21"
+            "discription": "Using: HTML5, CSS3, JavaScript, Jquery.",
+            "imgSrc": "https://i.ibb.co/4KZFkYC/rebalanz.png",
+            "url": "https://khanimran03466.github.io/ReBalanz/"
+        },
+        {
+            "title": "Avesys",
+            "discription": "Using: HTML5, CSS3, JavaScript, Jquery.",
+            "imgSrc": "https://i.ibb.co/F8Pjgn3/avensys.png",
+            "url": "https://khanimran03466.github.io/Avesys/"
         }
     ],
 
