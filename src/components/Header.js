@@ -1,40 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
-const Header = () => {
+const Header = ({ handleMenuClick }) => {
 
   const [menuOpen, setMenuOpen] = useState(false);
-  // const [navFixed, setNavFixed] = useState(false);
-  const [headerHeight, setHeaderHeight] = useState(0);
-
-  useEffect(()=>{
-
-    // window.addEventListener("scroll", e =>{
-    //   var doc = document.documentElement;
-    //   const top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-    //   if(top >= 75) {
-    //     setNavFixed(true)
-    //   } else {
-    //     setNavFixed(false)
-    //   }
-    // } );
-
-    let headerHgt = document.querySelector("header").clientHeight;
-    setHeaderHeight(headerHgt);
-
-  },[])
 
   
 
-  const handleMenuClick = (e) => {
-    e.preventDefault();
-    const element = document.getElementById(`${e.target.getAttribute("href").replace("#", "")}`)
-    const y = element.getBoundingClientRect().top + window.scrollY - headerHeight;
-    window.scroll({
-      top: y,
-      behavior: 'smooth'
-    });
-  }
 
   return (
     <>

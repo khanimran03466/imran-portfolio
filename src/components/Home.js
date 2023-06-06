@@ -8,7 +8,7 @@ import { FiChevronDown } from "react-icons/fi";
 
 import myImg from "../assets/images/my-image2.png";
 
-const Home = () => {
+const Home = ({handleMenuClick}) => {
 
   const clientCount = useRef(null);
   const projectCount = useRef(null);
@@ -85,7 +85,7 @@ const Home = () => {
 
           <div className="hireme-sec">
             <a href="mailto:khanimran03466@gamil.com"> Hire Me </a>
-            <a href="#work">
+            <a href="#work" onClick={handleMenuClick}>
               Projects <BsArrowUpRight />
             </a>
           </div>

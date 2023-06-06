@@ -6,20 +6,40 @@ import Services from "./components/Services.js";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
+import { useEffect, useState } from "react";
 
 
 
 function App() {
 
+  const [headerHeight, setHeaderHeight] = useState(0);
+
+  const handleMenuClick = (e) => {
+    e.preventDefault();
+    const element = document.getElementById(`${e.target.getAttribute("href").replace("#", "")}`)
+    const y = element.getBoundingClientRect().top + window.scrollY - headerHeight;
+    window.scroll({
+      top: y,
+      behavior: 'smooth'
+    });
+  }
+
+  useEffect( () => {
+    
+    let headerHgt = document.querySelector("header").clientHeight;
+    setHeaderHeight(headerHgt);
+
+  },[])
+
   return (
     <>
-      <Header/>
-      <Home />
+      <Header handleMenuClick={ handleMenuClick } />
+      <Home handleMenuClick={ handleMenuClick } />
       <Work />
       <Timeline />
       <Services />
       <Contact />
-      <Footer />
+      <Footer handleMenuClick={ handleMenuClick } />
       <Toaster />
     </>
   );
