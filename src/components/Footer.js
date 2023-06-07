@@ -2,7 +2,7 @@ import React from 'react';
 import {AiFillGithub, AiOutlineMail} from "react-icons/ai";
 import { BsArrowUpSquareFill, BsTelephone } from "react-icons/bs";
 
-const Footer = ({handleMenuClick}) => {
+const Footer = ({ handleMenuClick }) => {
 
   return (
     <footer>
@@ -24,7 +24,7 @@ const Footer = ({handleMenuClick}) => {
             </a>
         </div>
         <div className="fooSec">
-            <a href="#home" onClick={handleMenuClick}>
+            <a href="#home" onClick={handleMenuClick} >
                 <BsArrowUpSquareFill />
             </a>
         </div>

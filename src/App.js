@@ -14,6 +14,13 @@ function App() {
 
   const [headerHeight, setHeaderHeight] = useState(0);
 
+  useEffect( () => {
+    
+    let headerHgt = document.querySelector("header").clientHeight;
+    setHeaderHeight(headerHgt);
+
+  },[])
+
   const handleMenuClick = (e) => {
     e.preventDefault();
     const element = document.getElementById(`${e.target.getAttribute("href").replace("#", "")}`)
@@ -24,12 +31,7 @@ function App() {
     });
   }
 
-  useEffect( () => {
-    
-    let headerHgt = document.querySelector("header").clientHeight;
-    setHeaderHeight(headerHgt);
-
-  },[])
+  
 
   return (
     <>
