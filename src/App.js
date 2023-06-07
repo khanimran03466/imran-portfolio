@@ -12,39 +12,19 @@ import { useEffect, useState } from "react";
 
 function App() {
 
-  const [headerHeight, setHeaderHeight] = useState(0);
-
-  useEffect( () => {
-    
-    let headerHgt = document.querySelector("header").clientHeight;
-    setHeaderHeight(headerHgt);
-
-  },[])
-
-  const handleMenuClick = (e) => {
-    e.preventDefault();
-    const element = document.getElementById(`${e.target.getAttribute("href").replace("#", "")}`)
-    const y = element.getBoundingClientRect().top + window.scrollY - headerHeight;
-    window.scroll({
-      top: y,
-      behavior: 'smooth'
-    });
-  }
-
-  
-
   return (
     <>
-      <Header handleMenuClick={ handleMenuClick } />
-      <Home handleMenuClick={ handleMenuClick } />
+      <Header />
+      <Home />
       <Work />
       <Timeline />
       <Services />
       <Contact />
-      <Footer handleMenuClick={ handleMenuClick } />
+      <Footer />
       <Toaster />
     </>
   );
+
 }
 
 export default App;
